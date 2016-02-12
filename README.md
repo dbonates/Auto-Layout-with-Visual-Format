@@ -2,6 +2,9 @@
 
 Demo project for an article about using the visual format language I'll publish soon.
 
+<img src="images/portrait.png" width="200">
+<img src="images/landscape.png" width="400">
+
 ###About Visual Format language
 When using auto layout features, setup your constraints by code can be easily as using a simple and visual string. In most common cenarios this is enought.
 
