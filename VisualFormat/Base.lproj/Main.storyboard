@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="VisualFormat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="-49"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yIP-C1-7s3">
+            <objects>
+                <viewController storyboardIdentifier="LayoutedinSB" id="47c-NU-94s" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m8l-VB-80h"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Hn-vY-EhI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ltt-5F-Dfq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUM-GU-vHG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                <color key="backgroundColor" red="0.49019607840000001" green="0.47843137250000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="239" id="qBE-4L-Ma7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qBE-4L-Ma7"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLg-Ko-eb1">
+                                <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                <color key="backgroundColor" red="0.91942349140000001" green="1" blue="0.399137931" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="223" id="5x4-2M-4rJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5x4-2M-4rJ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7G-pC-1xp">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.44705882349999998" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o7G-pC-1xp" firstAttribute="height" secondItem="qLg-Ko-eb1" secondAttribute="height" id="0DE-rw-lMy"/>
+                            <constraint firstItem="qLg-Ko-eb1" firstAttribute="top" secondItem="eUM-GU-vHG" secondAttribute="bottom" id="3Cu-3s-gQ8"/>
+                            <constraint firstItem="o7G-pC-1xp" firstAttribute="top" secondItem="qLg-Ko-eb1" secondAttribute="bottom" id="3va-BG-Sk1"/>
+                            <constraint firstItem="qLg-Ko-eb1" firstAttribute="leading" secondItem="Ltt-5F-Dfq" secondAttribute="leading" id="Ec7-Dc-OlN"/>
+                            <constraint firstItem="o7G-pC-1xp" firstAttribute="height" secondItem="qLg-Ko-eb1" secondAttribute="height" id="Hpj-tr-O5C"/>
+                            <constraint firstItem="eUM-GU-vHG" firstAttribute="top" secondItem="Ltt-5F-Dfq" secondAttribute="top" id="UcZ-9y-ZPJ"/>
+                            <constraint firstItem="o7G-pC-1xp" firstAttribute="leading" secondItem="Ltt-5F-Dfq" secondAttribute="leading" id="X6K-HV-18e"/>
+                            <constraint firstItem="qLg-Ko-eb1" firstAttribute="height" secondItem="eUM-GU-vHG" secondAttribute="height" id="Yoe-n8-A5e"/>
+                            <constraint firstAttribute="trailing" secondItem="qLg-Ko-eb1" secondAttribute="trailing" id="bR1-gs-AqK"/>
+                            <constraint firstAttribute="trailing" secondItem="o7G-pC-1xp" secondAttribute="trailing" id="eCC-0q-arC"/>
+                            <constraint firstAttribute="trailing" secondItem="eUM-GU-vHG" secondAttribute="trailing" id="qaY-91-Cdi"/>
+                            <constraint firstItem="eUM-GU-vHG" firstAttribute="leading" secondItem="Ltt-5F-Dfq" secondAttribute="leading" id="vGq-xf-Tn6"/>
+                            <constraint firstItem="9Hn-vY-EhI" firstAttribute="top" secondItem="o7G-pC-1xp" secondAttribute="bottom" id="xYn-S2-sXV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Hpj-tr-O5C"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5H4-Aw-ssW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111" y="-49"/>
+        </scene>
+    </scenes>
+</document>
