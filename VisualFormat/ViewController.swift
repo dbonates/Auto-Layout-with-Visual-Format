@@ -137,7 +137,7 @@ class ViewController: UIViewController {
                 pad -= stepChange
                 if pad < 0 { pad = 0 }
             case UISwipeGestureRecognizerDirection.Down:
-                //if pad > self.v1.bounds.height { break }
+                if pad > self.v1.bounds.height { break }
                 pad += stepChange
             default:
                 print("did you meant to swipe?!")
