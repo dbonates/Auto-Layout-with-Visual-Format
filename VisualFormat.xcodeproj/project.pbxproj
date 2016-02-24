@@ -337,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VisualFormat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dbo.VisualFormat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonates.VisualFormat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -348,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VisualFormat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dbo.VisualFormat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonates.VisualFormat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -357,10 +357,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Bonates (8HHXR9YSNU)";
 				INFOPLIST_FILE = VisualFormatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dbo.VisualFormatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7bfafe7b-c30c-4ebe-8d79-26c80fe1d14d";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisualFormat.app/VisualFormat";
 			};
 			name = Debug;
@@ -369,10 +371,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Bonates (8HHXR9YSNU)";
 				INFOPLIST_FILE = VisualFormatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dbo.VisualFormatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7bfafe7b-c30c-4ebe-8d79-26c80fe1d14d";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisualFormat.app/VisualFormat";
 			};
 			name = Release;
