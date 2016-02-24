@@ -42,7 +42,6 @@ class VisualFormatTests: XCTestCase {
     func testOnLoadShouldHaveFourViewsOfSameSize() {
         
         XCTAssertEqual(vc.v1.bounds.height, (vc.view.bounds.height-5*vc.pad)/4)
-        
         let allHeights = [vc.v1.bounds.height,vc.v2.bounds.height,vc.v3.bounds.height,vc.v4.bounds.height]
         let uniqueHeights = NSCountedSet(array: allHeights)
         
