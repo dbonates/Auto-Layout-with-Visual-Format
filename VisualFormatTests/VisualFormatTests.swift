@@ -35,7 +35,7 @@ class VisualFormatTests: XCTestCase {
         vc.pad += 5
         vc.updateConstraints()
         
-        XCTAssertEqual(vc.v1.bounds.height, (vc.view.bounds.height-5*vc.pad)/4)
+        XCTAssertNotEqual(vc.v1.bounds.height, (vc.view.bounds.height-5*vc.pad)/4)
         XCTAssertNotEqual(beforeHeight, vc.v1.bounds.height)
     }
     
