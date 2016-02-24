@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var v4:UIView = UIView(frame: CGRectZero)
     
     var pad = 10.0 as CGFloat
-    var stepChange = 10.0 as CGFloat
+    var stepChange = 20.0 as CGFloat
     var fullHeight:CGFloat = 0
     
     var addedContraints:[NSLayoutConstraint] = []
